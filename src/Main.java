@@ -10,7 +10,7 @@ public class Main {
         String logPath = "telemetria.log"; // Donde se guardan los datos
         String configPath = "config.properties"; // Donde están los parámetros
 
-        // ===== 1) Leer configuración =====
+        // Lectura de la configuracion
         Properties p = new Properties(); // Crea el objeto para leer propiedades
         try (FileInputStream fis = new FileInputStream(configPath)) { // Abre el archivo
             p.load(fis); // Carga el documento config.properties que pone cada cuanto tiempo
